@@ -1,5 +1,6 @@
 package strings.anagrams;
 //https://www.hackerrank.com/challenges/java-anagrams/problem
+
 import java.io.*;
 import java.util.*;
 
@@ -9,12 +10,13 @@ public class Solution {
         StringBuilder sba = new StringBuilder(a.toLowerCase());
         StringBuilder sbb = new StringBuilder(b.toLowerCase());
         for (int i = 0; i < sba.length(); i++) {
-            String temp = sba.substring(i,i+1);
+            String temp = sba.substring(i, i + 1);
             if (sbb.indexOf(temp) == -1) return false;
             sbb.deleteCharAt(sbb.indexOf(temp));
         }
         return true;
     }
+
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -22,7 +24,7 @@ public class Solution {
         String b = scan.next();
         scan.close();
         boolean ret = isAnagram(a, b);
-        System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
+        System.out.println((ret) ? "Anagrams" : "Not Anagrams");
     }
 }
 

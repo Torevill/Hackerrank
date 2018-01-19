@@ -7,8 +7,8 @@ import java.util.Scanner;
 
 public class Solution {
     public static String getDay(String day, String month, String year) {
-        LocalDate date = LocalDate.of(Integer.parseInt(year),Integer.parseInt(month),Integer.parseInt(day));
-        return  date.getDayOfWeek().toString();
+        LocalDate date = LocalDate.of(Integer.parseInt(year), Integer.parseInt(month), Integer.parseInt(day));
+        return date.getDayOfWeek().toString();
     }
 
     public static void main(String[] args) {

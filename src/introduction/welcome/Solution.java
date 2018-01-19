@@ -1,4 +1,5 @@
 package introduction.welcome;
+
 //https://www.hackerrank.com/challenges/welcome-to-java/problem
 public class Solution {
     public static void main(String[] args) {

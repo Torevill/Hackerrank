@@ -33,27 +33,27 @@ $re = '|<(\w+) [^>]* > (.*) </\1>|xs';
         */
 
 
-public class Solution{
-    public static void main(String[] args){
+public class Solution {
+    public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
         int testCases = Integer.parseInt(in.nextLine());
         List<String> list = new ArrayList<>();
         String regex = "<(.+)>[^<]+</\\1>";
         Pattern pattern = Pattern.compile(regex);
-        while(testCases>0){
+        while (testCases > 0) {
             String line = in.nextLine();
             Matcher matcher = pattern.matcher(line);
             if (!matcher.find()) list.add("None");
             matcher.reset();
-            while(matcher.find()){
+            while (matcher.find()) {
                 String temp = matcher.group();
-                temp = temp.replaceAll("<(.+?)>","");
+                temp = temp.replaceAll("<(.+?)>", "");
                 list.add(temp);
             }
             testCases--;
         }
-        for (String now:list){
+        for (String now : list) {
             System.out.println(now);
         }
 

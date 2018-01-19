@@ -1,5 +1,6 @@
 package introduction.StaticInizilaizationBlock;
 //https://www.hackerrank.com/challenges/java-static-initializer-block/problem
+
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -10,6 +11,7 @@ public class Solution {
     static int B;
     static int H;
     static boolean flag = true;
+
     static {
         Scanner scanner = new Scanner(System.in);
         B = scanner.nextInt();
@@ -22,10 +24,9 @@ public class Solution {
     }
 
 
-
-    public static void main(String[] args){
-        if(flag){
-            int area=B*H;
+    public static void main(String[] args) {
+        if (flag) {
+            int area = B * H;
             System.out.print(area);
         }
 

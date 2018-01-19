@@ -13,6 +13,6 @@ public class Solution {
         Scanner in = new Scanner(System.in);
         BigInteger n = in.nextBigInteger();
         in.close();
-        System.out.println(n.isProbablePrime(128)? "prime" : "not prime");
+        System.out.println(n.isProbablePrime(128) ? "prime" : "not prime");
     }
 }

@@ -15,7 +15,7 @@ class Solution {
             s[i] = sc.next();
         }
         sc.close();
-        String [] temp = new String[n];
+        String[] temp = new String[n];
         for (int i = 0, j = 0; i < s.length; i++) {
             if (s[i] != null) temp[j++] = s[i];
         }

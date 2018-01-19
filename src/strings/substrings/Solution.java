@@ -15,7 +15,7 @@ public class Solution {
         String S = in.next();
         int start = in.nextInt();
         int end = in.nextInt();
-        System.out.println(S.substring(start,end));
+        System.out.println(S.substring(start, end));
     }
 }
 

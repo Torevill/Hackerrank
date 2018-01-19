@@ -14,7 +14,7 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
         double payment = scanner.nextDouble();
         scanner.close();
-        Locale ind = new Locale("en","IN");
+        Locale ind = new Locale("en", "IN");
         NumberFormat us = NumberFormat.getCurrencyInstance(Locale.US);
         NumberFormat india = NumberFormat.getCurrencyInstance(ind);
         NumberFormat china = NumberFormat.getCurrencyInstance(Locale.CHINA);
